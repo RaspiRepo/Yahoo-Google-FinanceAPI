@@ -469,8 +469,6 @@ public class stock_realtime_schedule
                     doRun       : Thread run method implemented to call a function
                                   to process the message events
 
-                    Written By  : K.Mariya (email: mariya@opticalfusion.net)
-
                     Copyright (c) 2014-Present.
                     All Rights Reserved.
                 -----------------------------------------------------------------*/
