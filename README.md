@@ -1,3 +1,4 @@
+
 # Yahoo/Google Finance data API.
 
 To build mysql databse + track stock market (NYSE/NASDAQ) symbols, RSI 
@@ -20,9 +21,13 @@ Java, Mysql, PHP, Restful API, Json.
 
   4. Once stcoket market database created and inserted all data from "stock_automate.sql" compile and run "stock_schedule_main.java"
 
+  5. To build Divident/Yeild table execute "stock_build_div_yld.java"
+  
 #What will happen
 
   1. Once execute "stock_schedule_main" it will check day of week and time, accordingly schedule the future execution (Threading). As soon as time arrive (Week days and morning 6:30 PST) start request real time market value for each symbols inserted into NASDAQ, NYSE table records. 
   2. Data collection process Query Yahoo Finance API and get the recent market values and insert into local table. Tihs table is created dialy basis for all symbols per exchange.
   
   3. Once 14 Samples collected for any symbols, there is RSI calculation for each symbol and inserted into separate table.  This table can be used to identify over sold/over bought sitution for given symbol.
+  
+  
