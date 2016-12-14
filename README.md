@@ -2,6 +2,8 @@
 
 To build mysql databse + tracking current tarading value of (NYSE/NASDAQ) symbols, RSI 
 
+#Java, Mysql, PHP, Restful API, Json.
+
 #Summary
   This project created to download Live data from Stock Exchange (NASDAQ/NYSE) for all Stock Symbols using Yahoo/Google Finanace API. Its developed for personal use generate alter notification for your watch list of stock symbols, determine buy/sell based on RSI (Relative Strength index - http://www.investopedia.com/terms/r/rsi.asp).
 
@@ -9,12 +11,15 @@ Every week days during Market open session a schedule process initiate downloadi
 
 Addional reports like can be generated Top Gainers/Loosers, Create alter notification for symbols when price match given threshold, using RSI index once can determine when overbought/over sold for given day, last 14 days RSI 
 
-#Tools: 
-Java, Mysql, PHP, Restful API, Json.
-Example URLs
+
+#Example URLs
+
 http://finance.yahoo.com/d/quotes.csv?s=AAPL+GOOG+MSFT&f=sb2b3jk
+
 http://download.finance.yahoo.com/d/quotes.csv?s="aapl"&f=sp0l1c1p2v0&e=.csv
+
 http://finance.yahoo.com/d/quotes.csv?s=AAPL&f=v
+
 http://download.finance.yahoo.com/d/quotes.csv?s="aapl"&f=v0&e=.csv
 
 Google Finance
