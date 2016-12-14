@@ -1,7 +1,6 @@
-
 # Yahoo/Google Finance data API.
 
-To build mysql databse + track stock market (NYSE/NASDAQ) symbols, RSI 
+To build mysql databse + tracking current tarading value of (NYSE/NASDAQ) symbols, RSI 
 
 #Summary
   This project created to download and store live stock market values from yahoo or google finance API. Its developed for personal use like generate alter notification of watch  list symbols when to buy/sell based on RSI (Relative Strength index - http://www.investopedia.com/terms/r/rsi.asp).
@@ -25,7 +24,7 @@ Java, Mysql, PHP, Restful API, Json.
   
 #What will happen
 
-  1. Once execute "stock_schedule_main" it will check day of week and time, accordingly schedule the future execution (Threading). As soon as time arrive (Week days and morning 6:30 PST) start request real time market value for each symbols inserted into NASDAQ, NYSE table records. 
+  1. Once execute "stock_schedule_main" it will check day of week and time, accordingly schedule the future execution (Threading). As soon as time arrive (Week days/ morning 6:30 PST to 1:00 PM PST) start getitng real time market value for each symbols inserted into NASDAQ, NYSE table records. 
   2. Data collection process Query Yahoo Finance API and get the recent market values and insert into local table. Tihs table is created dialy basis for all symbols per exchange.
   
   3. Once 14 Samples collected for any symbols, there is RSI calculation for each symbol and inserted into separate table.  This table can be used to identify over sold/over bought sitution for given symbol.
